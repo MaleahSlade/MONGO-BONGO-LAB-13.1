@@ -6,3 +6,7 @@ import { MongoClient } from 'mongodb';
 //where it listens for visitors 
 const app = express();
 const PORT = 3001;
+
+//Sets up the MONGODB client
+const client = new MongoClient(process.env.MONGO_URI);
+

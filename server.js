@@ -21,4 +21,11 @@ res.status(500).json({ message: 'Failed to connect to Maleah\'s database.' });
 }
 });
 
+//Starts the server
+app.listen(PORT, () => {
+console.log(`Server running on http://localhost:${PORT}`);
+});
+
+
+
 
